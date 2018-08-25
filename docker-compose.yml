@@ -1,0 +1,8 @@
+version: '2'
+services:
+  dga_predict:
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+    volumes:
+      - "./src:/dga_predict"

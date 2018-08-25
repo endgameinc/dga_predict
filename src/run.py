@@ -6,8 +6,8 @@ import pickle
 #matplotlib.use('Agg')
 import numpy as np
 
-import dga_classifier.bigram as bigram
-import dga_classifier.lstm as lstm
+import src.dga_classifier.bigram as bigram
+import src.dga_classifier.lstm as lstm
 
 from scipy import interp
 from sklearn.metrics import roc_curve, auc

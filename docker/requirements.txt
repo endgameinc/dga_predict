@@ -1,3 +1,4 @@
 tldextract
+tensorflow
 keras
 scikit-learn

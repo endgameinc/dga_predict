@@ -2,8 +2,8 @@
 import itertools
 import os
 import pickle
-import matplotlib
-matplotlib.use('Agg')
+#import matplotlib
+#matplotlib.use('Agg')
 import numpy as np
 
 import dga_classifier.bigram as bigram
@@ -62,6 +62,8 @@ def create_figs(isbigram=True, islstm=True, nfolds=10, force=False):
         lstm_binary_fpr, lstm_binary_tpr, lstm_binary_auc = calc_macro_roc(fpr, tpr)
 
     # Save figure
+
+    """
     from matplotlib import pyplot as plt
     with plt.style.context('bmh'):
         plt.plot(lstm_binary_fpr, lstm_binary_tpr,
@@ -78,6 +80,7 @@ def create_figs(isbigram=True, islstm=True, nfolds=10, force=False):
 
         plt.tick_params(axis='both', labelsize=22)
         plt.savefig('results.png')
+    """
 
 def calc_macro_roc(fpr, tpr):
     """Calcs macro ROC on log scale"""
